@@ -31,13 +31,7 @@ import dagger.Lazy;
 import io.reactivex.subjects.Subject;
 
 /**
- * ================================================
  * 配合 {@link ActivityLifecycleable} 使用,使 {@link Activity} 具有 {@link RxLifecycle} 的特性
- * <p>
- * Created by JessYan on 25/08/2017 18:56
- * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
- * <a href="https://github.com/JessYanCoding">Follow me</a>
- * ================================================
  */
 @Singleton
 public class ActivityLifecycleForRxLifecycle implements Application.ActivityLifecycleCallbacks {

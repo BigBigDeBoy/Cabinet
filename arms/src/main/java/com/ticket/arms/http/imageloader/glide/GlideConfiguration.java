@@ -24,6 +24,10 @@ import com.ticket.arms.utils.DataHelper;
 import java.io.File;
 import java.io.InputStream;
 
+/**
+ * {@link AppGlideModule} 的默认实现类
+ * 用于配置缓存文件夹,切换图片请求框架等操作
+ */
 @GlideModule(glideName = "GlideArms")
 public class GlideConfiguration extends AppGlideModule {
     public static final int IMAGE_DISK_CACHE_MAX_SIZE = 100 * 1024 * 1024;//图片缓存文件最大值为100Mb

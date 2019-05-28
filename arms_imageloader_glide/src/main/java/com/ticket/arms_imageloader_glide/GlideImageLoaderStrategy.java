@@ -12,6 +12,7 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 import com.ticket.arms.http.imageloader.BaseImageLoaderStrategy;
+import com.ticket.arms.http.imageloader.ImageConfig;
 import com.ticket.arms.http.imageloader.glide.GlideAppliesOptions;
 import com.ticket.arms.http.imageloader.glide.GlideArms;
 import com.ticket.arms.http.imageloader.glide.GlideRequest;
@@ -24,6 +25,10 @@ import io.reactivex.functions.Action;
 import io.reactivex.schedulers.Schedulers;
 import timber.log.Timber;
 
+/**
+ * 此类只是简单的实现了 Glide 加载的策略,方便快速使用,但大部分情况会需要应对复杂的场景
+ * 这时可自行实现 {@link BaseImageLoaderStrategy} 和 {@link ImageConfig} 替换现有策略
+ */
 public class GlideImageLoaderStrategy implements BaseImageLoaderStrategy<ImageConfigImpl>, GlideAppliesOptions {
     @Override
     public void loadImage(@Nullable Context ctx, @Nullable ImageConfigImpl config) {

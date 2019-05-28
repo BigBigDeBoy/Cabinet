@@ -10,6 +10,9 @@ import java.net.UnknownHostException;
 import me.jessyan.rxerrorhandler.handler.listener.ResponseErrorListener;
 import retrofit2.HttpException;
 
+/**
+ * 展示 {@link ResponseErrorListener} 的用法
+ */
 public class ResponseErrorListenerImpl implements ResponseErrorListener {
     @Override
     public void handleResponseError(Context context, Throwable t) {

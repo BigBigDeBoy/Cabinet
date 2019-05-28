@@ -9,6 +9,9 @@ import com.ticket.arms.base.App;
 import com.ticket.arms.di.component.AppComponent;
 import com.ticket.arms.integration.AppManager;
 
+/**
+ * 一些框架常用的工具
+ */
 public class ArmsUtils {
 
     public static AppComponent obtainAppComponentFromContext(Context context){

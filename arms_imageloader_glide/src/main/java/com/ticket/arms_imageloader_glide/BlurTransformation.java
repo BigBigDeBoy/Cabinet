@@ -15,7 +15,7 @@ import java.security.MessageDigest;
 /**
  * @author :dadade
  * date   :2019-05-27 19:05
- * desc   :
+ * desc   :高斯模糊
  */
 public class BlurTransformation extends BitmapTransformation {
 

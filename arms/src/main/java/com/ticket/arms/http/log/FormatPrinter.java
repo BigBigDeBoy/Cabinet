@@ -25,13 +25,7 @@ import okhttp3.MediaType;
 import okhttp3.Request;
 
 /**
- * ================================================
  * 对 OkHttp 的请求和响应信息进行更规范和清晰的打印, 开发者可更根据自己的需求自行扩展打印格式
- * <p>
- * Created by JessYan on 31/01/2018 17:36
- * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
- * <a href="https://github.com/JessYanCoding">Follow me</a>
- * ================================================
  */
 
 public interface FormatPrinter {

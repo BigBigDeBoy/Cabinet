@@ -21,15 +21,8 @@ import android.content.Context;
 
 
 /**
- * ================================================
  * 构建 {@link Cache} 时,使用 {@link CacheType} 中声明的类型,来区分不同的模块
  * 从而为不同的模块构建不同的缓存策略
- *
- * @see Cache.Factory#build(CacheType)
- * Created by JessYan on 25/09/2017 18:05
- * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
- * <a href="https://github.com/JessYanCoding">Follow me</a>
- * ================================================
  */
 public interface CacheType {
     int RETROFIT_SERVICE_CACHE_TYPE_ID = 0;

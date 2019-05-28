@@ -23,6 +23,10 @@ import javax.inject.Singleton;
 
 import dagger.Lazy;
 
+/**
+ * {@link Application.ActivityLifecycleCallbacks} 默认实现类
+ *  通过 {@link ActivityDelegate} 管理 {@link Activity}
+ */
 @Singleton
 public class ActivityLifecycle implements Application.ActivityLifecycleCallbacks {
 

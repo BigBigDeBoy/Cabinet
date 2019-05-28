@@ -36,6 +36,9 @@ import okhttp3.HttpUrl;
 import okhttp3.Interceptor;
 import okhttp3.internal.Util;
 
+/**
+ * 框架独创的建造者模式 {@link Module},可向框架中注入外部配置的自定义参数
+ */
 @Module
 public class GlobalConfigModule {
     private HttpUrl mApiUrl;

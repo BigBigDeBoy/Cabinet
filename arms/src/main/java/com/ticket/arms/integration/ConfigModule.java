@@ -11,6 +11,9 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
+/**
+ * {@link ConfigModule} 可以给框架配置一些参数,需要实现 {@link ConfigModule} 后,在 AndroidManifest 中声明该实现类
+ */
 public interface ConfigModule {
 
     void applyOptions(@NotNull Context context, @NotNull GlobalConfigModule.Builder builder);

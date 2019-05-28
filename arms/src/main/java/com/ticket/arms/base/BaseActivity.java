@@ -27,6 +27,11 @@ import io.reactivex.subjects.Subject;
 
 import static com.ticket.arms.utils.ThirdViewUtil.convertAutoView;
 
+/**
+ *  因为 Java 只能单继承, 所以如果要用到需要继承特定 {@link Activity} 的三方库, 那你就需要自己自定义 {@link Activity}
+ *  继承于这个特定的 {@link Activity}, 然后再按照 {@link BaseActivity} 的格式, 将代码复制过去, 记住一定要实现{@link IActivity}
+ * @param <P>
+ */
 public abstract class BaseActivity<P extends IPresenter> extends AppCompatActivity implements IActivity, ActivityLifecycleable {
     protected final String TAG = this.getClass().getSimpleName();
     private Cache mCache;

@@ -24,12 +24,7 @@ import android.view.View;
 import timber.log.Timber;
 
 /**
- * ================================================
- * <p>
- * Created by JessYan on 23/08/2018 17:14
- * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
- * <a href="https://github.com/JessYanCoding">Follow me</a>
- * ================================================
+ * 展示 {@link FragmentManager.FragmentLifecycleCallbacks} 的用法
  */
 public class FragmentLifecycleCallbacksImpl extends FragmentManager.FragmentLifecycleCallbacks {
 

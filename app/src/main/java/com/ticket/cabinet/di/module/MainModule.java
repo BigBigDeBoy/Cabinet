@@ -5,10 +5,6 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-import dagger.Binds;
-import dagger.Module;
-import dagger.Provides;
-
 import com.tbruyelle.rxpermissions2.RxPermissions;
 import com.ticket.arms.di.scope.ActivityScope;
 import com.ticket.cabinet.mvp.contract.MainContract;
@@ -19,19 +15,10 @@ import com.ticket.cabinet.mvp.ui.adapter.UserAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
+import dagger.Binds;
+import dagger.Module;
+import dagger.Provides;
 
-/**
- * ================================================
- * Description:
- * <p>
- * Created by MVPArmsTemplate on 05/27/2019 11:06
- * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
- * <a href="https://github.com/JessYanCoding">Follow me</a>
- * <a href="https://github.com/JessYanCoding/MVPArms">Star me</a>
- * <a href="https://github.com/JessYanCoding/MVPArms/wiki">See me</a>
- * <a href="https://github.com/JessYanCoding/MVPArmsTemplate">模版请保持更新</a>
- * ================================================
- */
 @Module
 public abstract class MainModule {
 

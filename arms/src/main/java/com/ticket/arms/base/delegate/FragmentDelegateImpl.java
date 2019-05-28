@@ -31,13 +31,7 @@ import butterknife.Unbinder;
 import timber.log.Timber;
 
 /**
- * ================================================
  * {@link FragmentDelegate} 默认实现类
- * <p>
- * Created by JessYan on 29/04/2017 16:12
- * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
- * <a href="https://github.com/JessYanCoding">Follow me</a>
- * ================================================
  */
 public class FragmentDelegateImpl implements FragmentDelegate {
     private FragmentManager mFragmentManager;

@@ -11,6 +11,9 @@ import com.ticket.arms.utils.ArmsUtils;
 
 import org.jetbrains.annotations.NotNull;
 
+/**
+ * {@link ActivityDelegate} 默认实现类
+ */
 public class ActivityDelegateImpl implements ActivityDelegate {
 
 

@@ -7,7 +7,6 @@ import com.ticket.arms.utils.ArmsUtils;
 import org.jetbrains.annotations.NotNull;
 
 import static com.ticket.arms.utils.Preconditions.checkNotNull;
-
 public interface IView {
     /**
      * 显示加载

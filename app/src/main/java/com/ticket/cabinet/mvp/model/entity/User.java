@@ -16,13 +16,7 @@
 package com.ticket.cabinet.mvp.model.entity;
 
 /**
- * ================================================
  * User 实体类
- * <p>
- * Created by JessYan on 04/09/2016 17:14
- * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
- * <a href="https://github.com/JessYanCoding">Follow me</a>
- * ================================================
  */
 public class User {
     private final int id;
@@ -49,7 +43,8 @@ public class User {
         return login;
     }
 
-    @Override public String toString() {
+    @Override
+    public String toString() {
         return "id -> " + id + " login -> " + login;
     }
 }

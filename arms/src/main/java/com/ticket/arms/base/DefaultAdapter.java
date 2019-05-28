@@ -21,17 +21,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-
 import java.util.List;
 
 /**
- * ================================================
  * 基类 {@link RecyclerView.Adapter}, 如果需要实现非常复杂的 {@link RecyclerView}, 请尽量使用其他优秀的三方库
- * <p>
- * Created by jess on 2015/11/27.
- * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
- * <a href="https://github.com/JessYanCoding">Follow me</a>
- * ================================================
  */
 public abstract class DefaultAdapter<T> extends RecyclerView.Adapter<BaseHolder<T>> {
     protected List<T> mInfos;
@@ -46,7 +39,7 @@ public abstract class DefaultAdapter<T> extends RecyclerView.Adapter<BaseHolder<
     /**
      * 创建 {@link BaseHolder}
      *
-     * @param parent 父容器
+     * @param parent   父容器
      * @param viewType 布局类型
      * @return {@link BaseHolder}
      */
@@ -142,15 +135,17 @@ public abstract class DefaultAdapter<T> extends RecyclerView.Adapter<BaseHolder<
 
     /**
      * item 点击事件
+     *
      * @param <T>
      */
     public interface OnRecyclerViewItemClickListener<T> {
 
         /**
          * item 被点击
-         * @param view 被点击的 {@link View}
+         *
+         * @param view     被点击的 {@link View}
          * @param viewType 布局类型
-         * @param data 数据
+         * @param data     数据
          * @param position 在 RecyclerView 中的位置
          */
         void onItemClick(@NonNull View view, int viewType, @NonNull T data, int position);
@@ -158,6 +153,7 @@ public abstract class DefaultAdapter<T> extends RecyclerView.Adapter<BaseHolder<
 
     /**
      * 设置 item 点击事件
+     *
      * @param listener
      */
     public void setOnItemClickListener(OnRecyclerViewItemClickListener listener) {

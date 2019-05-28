@@ -17,9 +17,10 @@ import okhttp3.Request;
 import okhttp3.Response;
 import timber.log.Timber;
 
+/**
+ * 展示 {@link GlobalHttpHandler} 的用法
+ */
 public class GlobalHttpHandlerImpl implements GlobalHttpHandler {
-
-
     private Context context;
 
     public GlobalHttpHandlerImpl(Context context) {

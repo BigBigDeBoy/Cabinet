@@ -1,29 +1,14 @@
 package com.ticket.cabinet.di.component;
 
-import dagger.BindsInstance;
-import dagger.Component;
-
-
 import com.ticket.arms.di.component.AppComponent;
 import com.ticket.arms.di.scope.ActivityScope;
 import com.ticket.cabinet.di.module.MainModule;
 import com.ticket.cabinet.mvp.contract.MainContract;
-
 import com.ticket.cabinet.mvp.ui.activity.MainActivity;
 
+import dagger.BindsInstance;
+import dagger.Component;
 
-/**
- * ================================================
- * Description:
- * <p>
- * Created by MVPArmsTemplate on 05/27/2019 11:06
- * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
- * <a href="https://github.com/JessYanCoding">Follow me</a>
- * <a href="https://github.com/JessYanCoding/MVPArms">Star me</a>
- * <a href="https://github.com/JessYanCoding/MVPArms/wiki">See me</a>
- * <a href="https://github.com/JessYanCoding/MVPArmsTemplate">模版请保持更新</a>
- * ================================================
- */
 @ActivityScope
 @Component(modules = MainModule.class, dependencies = AppComponent.class)
 public interface MainComponent {

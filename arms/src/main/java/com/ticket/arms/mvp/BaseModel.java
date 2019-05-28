@@ -8,6 +8,9 @@ import android.arch.lifecycle.OnLifecycleEvent;
 
 import com.ticket.arms.integration.IRepositoryManager;
 
+/**
+ * 基类 Model
+ */
 public class BaseModel implements IModel, LifecycleObserver {
 
     protected IRepositoryManager mRepositoryManager;

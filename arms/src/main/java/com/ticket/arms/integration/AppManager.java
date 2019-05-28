@@ -20,6 +20,9 @@ import timber.log.Timber;
 
 import static com.ticket.arms.base.Platform.DEPENDENCY_SUPPORT_DESIGN;
 
+/**
+ * 用于管理所有 {@link Activity}, 和在前台的 {@link Activity}
+ */
 public final class AppManager {
     private static volatile AppManager sAppManager;
     protected final String TAG = this.getClass().getSimpleName();

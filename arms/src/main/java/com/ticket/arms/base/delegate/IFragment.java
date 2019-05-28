@@ -3,6 +3,7 @@ package com.ticket.arms.base.delegate;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,7 +16,7 @@ import org.jetbrains.annotations.NotNull;
 /**
  * @author :dadade
  * date   :2019-05-28 10:59
- * desc   :
+ * desc   :框架要求框架中的每个 {@link Fragment} 都需要实现此类,以满足规范
  */
 public interface IFragment {
 

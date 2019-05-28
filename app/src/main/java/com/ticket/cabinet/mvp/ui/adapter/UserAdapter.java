@@ -18,7 +18,6 @@ package com.ticket.cabinet.mvp.ui.adapter;
 import android.support.annotation.NonNull;
 import android.view.View;
 
-
 import com.ticket.arms.base.BaseHolder;
 import com.ticket.arms.base.DefaultAdapter;
 import com.ticket.cabinet.R;
@@ -27,16 +26,6 @@ import com.ticket.cabinet.mvp.ui.holder.UserItemHolder;
 
 import java.util.List;
 
-
-/**
- * ================================================
- * 展示 {@link DefaultAdapter} 的用法
- * <p>
- * Created by JessYan on 09/04/2016 12:57
- * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
- * <a href="https://github.com/JessYanCoding">Follow me</a>
- * ================================================
- */
 public class UserAdapter extends DefaultAdapter<User> {
 
     public UserAdapter(List<User> infos) {

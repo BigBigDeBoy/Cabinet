@@ -5,6 +5,7 @@ import com.ticket.cabinet.mvp.model.entity.User;
 import java.util.List;
 
 import io.reactivex.Observable;
+import retrofit2.Retrofit;
 import retrofit2.http.GET;
 import retrofit2.http.Headers;
 import retrofit2.http.Query;
@@ -12,7 +13,8 @@ import retrofit2.http.Query;
 /**
  * @author :dadade
  * date   :2019-05-27 18:20
- * desc   :
+ * desc   :展示 {@link Retrofit#create(Class)} 中需要传入的 ApiService 的使用方式
+ * 存放关于用户的一些 API
  */
 public interface UserService {
     String HEADER_API_VERSION = "Accept: application/vnd.github.v3+json";
