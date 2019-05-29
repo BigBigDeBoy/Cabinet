@@ -1,10 +1,8 @@
 package com.ticket.cabinet.mvp.model;
 
-import android.app.Application;
 import android.arch.lifecycle.Lifecycle;
 import android.arch.lifecycle.OnLifecycleEvent;
 
-import com.google.gson.Gson;
 import com.ticket.arms.di.scope.ActivityScope;
 import com.ticket.arms.integration.IRepositoryManager;
 import com.ticket.arms.mvp.BaseModel;
@@ -30,20 +28,8 @@ public class MainModel extends BaseModel implements MainContract.Model {
     public static final int USERS_PER_PAGE = 10;
 
     @Inject
-    Gson mGson;
-    @Inject
-    Application mApplication;
-
-    @Inject
     public MainModel(IRepositoryManager repositoryManager) {
         super(repositoryManager);
-    }
-
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-        this.mGson = null;
-        this.mApplication = null;
     }
 
     @Override

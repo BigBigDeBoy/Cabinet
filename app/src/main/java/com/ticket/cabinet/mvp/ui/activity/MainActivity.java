@@ -2,7 +2,6 @@ package com.ticket.cabinet.mvp.ui.activity;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.nfc.Tag;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -19,8 +18,6 @@ import com.ticket.cabinet.R;
 import com.ticket.cabinet.di.component.DaggerMainComponent;
 import com.ticket.cabinet.mvp.contract.MainContract;
 import com.ticket.cabinet.mvp.presenter.MainPresenter;
-
-import java.util.Timer;
 
 import javax.inject.Inject;
 

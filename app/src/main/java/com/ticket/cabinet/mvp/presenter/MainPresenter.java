@@ -31,10 +31,6 @@ public class MainPresenter extends BasePresenter<MainContract.Model, MainContrac
     @Inject
     Application mApplication;
     @Inject
-    ImageLoader mImageLoader;
-    @Inject
-    AppManager mAppManager;
-    @Inject
     List<User> mUsers;
     @Inject
     RecyclerView.Adapter mAdapter;
@@ -56,8 +52,6 @@ public class MainPresenter extends BasePresenter<MainContract.Model, MainContrac
     public void onDestroy() {
         super.onDestroy();
         this.mErrorHandler = null;
-        this.mAppManager = null;
-        this.mImageLoader = null;
         this.mApplication = null;
     }
 
