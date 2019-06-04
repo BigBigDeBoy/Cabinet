@@ -34,6 +34,8 @@ public class MainPresenter extends BasePresenter<MainContract.Model, MainContrac
     List<User> mUsers;
     @Inject
     RecyclerView.Adapter mAdapter;
+    @Inject
+    AppManager mAppManager;
     private int lastUserId;
     private boolean isFirst;
     private int preEndIndex;
@@ -53,6 +55,7 @@ public class MainPresenter extends BasePresenter<MainContract.Model, MainContrac
         super.onDestroy();
         this.mErrorHandler = null;
         this.mApplication = null;
+        this.mAppManager = null;
     }
 
     public void requestUsers(boolean pullToRefresh) {
