@@ -50,7 +50,7 @@ public final class AppManager {
 
     public AppManager init(Application application) {
         mApplication = application;
-        return this;
+        return sAppManager;
     }
 
     public void showSnackbar(String message, boolean isLong) {

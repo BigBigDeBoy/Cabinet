@@ -45,6 +45,9 @@ import okhttp3.OkHttpClient;
 public interface AppComponent {
     Application application();
 
+    @Deprecated
+    AppManager appManager();
+
     /**
      * 用于管理网络请求层，以及数据缓存层
      */
